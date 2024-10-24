@@ -1,0 +1,90 @@
+[submodule "ext/log4sp"]
+	path = ext/log4sp
+	url = https://github.com/F1F88/sm-ext-log4sp.git
+[submodule "ext/ripext"]
+	path = ext/ripext
+	url = https://github.com/ErikMinekus/sm-ripext.git
+[submodule "ext/socket"]
+	path = ext/socket
+	url = https://github.com/JoinedSenses/sm-ext-socket.git
+[submodule "ext/SteamWorks"]
+	path = ext/SteamWorks
+	url = https://github.com/KyleSanderson/SteamWorks.git
+[submodule "inc/localizer"]
+	path = inc/localizer
+	url = https://github.com/dragokas/SM-Localizer.git
+[submodule "inc/multicolors"]
+	path = inc/multicolors
+	url = https://github.com/Bara/Multi-Colors.git
+[submodule "inc/nmrih-vscript-proxy"]
+	path = inc/nmrih-vscript-proxy
+	url = https://github.com/dysphie/nmrih-vscript-proxy.git
+[submodule "inc/outputactions"]
+	path = inc/outputactions
+	url = https://github.com/Ilusion9/outputactions-inc-sm.git
+[submodule "inc/queue"]
+	path = inc/queue
+	url = https://github.com/JoinedSenses/SM-Queue.git
+[submodule "inc/smlib2"]
+	path = inc/smlib2
+	url = https://github.com/laper32/smlib2.git
+[submodule "sm_1_11"]
+	path = sm_1_11
+	url = https://github.com/alliedmodders/sourcemod.git
+	branch = 1.11-dev
+[submodule "sm_latest"]
+	path = sm_latest
+	url = https://github.com/alliedmodders/sourcemod.git
+	branch = master
+[submodule "util/objective"]
+	path = util/objective
+	url = https://github.com/F1F88/sm-nmrih-objective.git
+[submodule "util/chronobreak"]
+	path = util/chronobreak
+	url = https://github.com/F1F88/sm-chronobreak
+[submodule "util/dash"]
+	path = util/dash
+	url = https://github.com/F1F88/sm-dash
+[submodule "util/player"]
+	path = util/player
+	url = https://github.com/F1F88/sm-nmrih-player.git
+[submodule "ext-log4sp"]
+	path = ext-log4sp
+	url = https://github.com/F1F88/sm-ext-log4sp.git
+[submodule "ext-ripext"]
+	path = ext-ripext
+	url = https://github.com/ErikMinekus/sm-ripext.git
+[submodule "ext-socket"]
+	path = ext-socket
+	url = https://github.com/JoinedSenses/sm-ext-socket.git
+[submodule "ext-SteamWorks"]
+	path = ext-SteamWorks
+	url = https://github.com/KyleSanderson/SteamWorks.git
+[submodule "inc-dash"]
+	path = inc-dash
+	url = https://github.com/F1F88/sm-dash.git
+[submodule "inc-localizer"]
+	path = inc-localizer
+	url = https://github.com/dragokas/SM-Localizer.git
+[submodule "inc-multicolors"]
+	path = inc-multicolors
+	url = https://github.com/Bara/Multi-Colors.git
+[submodule "inc-nmrih-player"]
+	path = inc-nmrih-player
+	url = https://github.com/F1F88/sm-nmrih-player.git
+[submodule "sm_1_12"]
+	path = sm_1_12
+	url = https://github.com/alliedmodders/sourcemod.git
+	branch = 1.12-dev
+[submodule "utils/objective"]
+	path = utils/objective
+	url = https://github.com/F1F88/sm-nmrih-objective.git
+[submodule "utils/chronobreak"]
+	path = utils/chronobreak
+	url = https://github.com/F1F88/sm-chronobreak
+[submodule "utils/dash"]
+	path = utils/dash
+	url = https://github.com/F1F88/sm-dash
+[submodule "utils/player"]
+	path = utils/player
+	url = https://github.com/F1F88/sm-nmrih-player.git
