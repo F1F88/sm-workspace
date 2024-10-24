@@ -2,7 +2,7 @@
 
 个人所用的 SourceMod 开发环境，上传项目为了保存历史记录，遵守开源协议所以公开源代码。
 
-# 项目结构
+## 项目结构
 
 - bin
 
@@ -58,7 +58,7 @@
     tips: 添加新的子模块后，需要配置 settings.json 否则可能找不到头文件
 
 
-# 使用
+## 使用
 
 - 拉取项目（递归）
     ```
@@ -111,7 +111,7 @@
         "sourcepawn.runServerCommandsAfterCompile": false,      // 编译后运行指令
         "sourcepawn.availableAPIs": [
             {
-                "name": "win111",
+                "name": "win_1_12",
                 "includeDirectories": [
                     ".\\scripting\\include",
                     "D:\\Code\\sm\\ext",
@@ -127,20 +127,20 @@
                     "D:\\Code\\sm\\inc\\outputactions",
                     "D:\\Code\\sm\\inc\\queue\\scripting\\include",
                     "D:\\Code\\sm\\inc\\smlib2\\include",
-                    "D:\\Code\\sm\\sm_1_11\\plugins\\include",
-                    "D:\\Code\\sm\\util",
-                    "D:\\Code\\sm\\util\\",
-                    "D:\\Code\\sm\\util\\chronobreak\\scripting\\include",
-                    "D:\\Code\\sm\\util\\dash\\scripting\\include",
-                    "D:\\Code\\sm\\util\\objective\\scripting\\include",
-                    "D:\\Code\\sm\\util\\player\\scripting\\include",
+                    "D:\\Code\\sm\\sm_1_12\\plugins\\include",
+                    "D:\\Code\\sm\\utils",
+                    "D:\\Code\\sm\\utils\\",
+                    "D:\\Code\\sm\\utils\\chronobreak\\scripting\\include",
+                    "D:\\Code\\sm\\utils\\dash\\scripting\\include",
+                    "D:\\Code\\sm\\utils\\objective\\scripting\\include",
+                    "D:\\Code\\sm\\utils\\player\\scripting\\include",
                 ],
-                "compilerPath": "D:\\Code\\sm\\bin\\sm_1_11\\spcomp.exe",
+                "compilerPath": "D:\\Code\\sm\\bin\\sm_1_12\\spcomp.exe",
                 "outputDirectoryPath": "D:\\Code\\sm\\bin\\plugins_1_11\\",
                 "compilerArguments": []
             },
             {
-                "name": "win112",
+                "name": "win_latest",
                 "includeDirectories": [
                     ".\\scripting\\include",
                     "D:\\Code\\sm\\ext\\log4sp\\sourcemod\\scripting\\include",
@@ -156,19 +156,19 @@
                     "D:\\Code\\sm\\inc\\queue\\scripting\\include",
                     "D:\\Code\\sm\\inc\\smlib2\\include",
                     "D:\\Code\\sm\\sm_latest\\plugins\\include",
-                    "D:\\Code\\sm\\util",
-                    "D:\\Code\\sm\\util\\",
-                    "D:\\Code\\sm\\util\\chronobreak\\scripting\\include",
-                    "D:\\Code\\sm\\util\\dash\\scripting\\include",
-                    "D:\\Code\\sm\\util\\objective\\scripting\\include",
-                    "D:\\Code\\sm\\util\\player\\scripting\\include",
+                    "D:\\Code\\sm\\utils",
+                    "D:\\Code\\sm\\utils\\",
+                    "D:\\Code\\sm\\utils\\chronobreak\\scripting\\include",
+                    "D:\\Code\\sm\\utils\\dash\\scripting\\include",
+                    "D:\\Code\\sm\\utils\\objective\\scripting\\include",
+                    "D:\\Code\\sm\\utils\\player\\scripting\\include",
                 ],
                 "compilerPath": "D:\\Code\\sm\\bin\\sm_latest\\spcomp.exe",
                 "outputDirectoryPath": "D:\\Code\\sm\\bin\\plugins_latest\\",
                 "compilerArguments": []
             },
             {
-                "name": "linux111",
+                "name": "linux_1_12",
                 "includeDirectories": [
                     "./scripting/include",
                     "/home/nmrihserver/sm/ext",
@@ -184,20 +184,20 @@
                     "/home/nmrihserver/sm/inc/outputactions",
                     "/home/nmrihserver/sm/inc/queue/scripting/include",
                     "/home/nmrihserver/sm/inc/smlib2/include",
-                    "/home/nmrihserver/sm/sm_1_11/plugins/include",
-                    "/home/nmrihserver/sm/util",
-                    "/home/nmrihserver/sm/util/",
-                    "/home/nmrihserver/sm/util/chronobreak/scripting/include",
-                    "/home/nmrihserver/sm/util/dash/scripting/include",
-                    "/home/nmrihserver/sm/util/objective/scripting/include",
-                    "/home/nmrihserver/sm/util/player/scripting/include",
+                    "/home/nmrihserver/sm/sm_1_12/plugins/include",
+                    "/home/nmrihserver/sm/utils",
+                    "/home/nmrihserver/sm/utils/",
+                    "/home/nmrihserver/sm/utils/chronobreak/scripting/include",
+                    "/home/nmrihserver/sm/utils/dash/scripting/include",
+                    "/home/nmrihserver/sm/utils/objective/scripting/include",
+                    "/home/nmrihserver/sm/utils/player/scripting/include",
                 ],
-                "compilerPath": "/home/nmrihserver/sm/bin/sm_1_11/spcomp",
+                "compilerPath": "/home/nmrihserver/sm/bin/sm_1_12/spcomp",
                 "outputDirectoryPath": "/home/nmrihserver/sm/bin/plugins_1_11/",
                 "compilerArguments": []
             },
             {
-                "name": "linux112",
+                "name": "linux_latest",
                 "includeDirectories": [
                     "./scripting/include",
                     "/home/nmrihserver/sm/ext/log4sp/sourcemod/scripting/include",
@@ -213,12 +213,12 @@
                     "/home/nmrihserver/sm/inc/queue/scripting/include",
                     "/home/nmrihserver/sm/inc/smlib2/include",
                     "/home/nmrihserver/sm/sm_latest/plugins/include",
-                    "/home/nmrihserver/sm/util",
-                    "/home/nmrihserver/sm/util/",
-                    "/home/nmrihserver/sm/util/chronobreak/scripting/include",
-                    "/home/nmrihserver/sm/util/dash/scripting/include",
-                    "/home/nmrihserver/sm/util/objective/scripting/include",
-                    "/home/nmrihserver/sm/util/player/scripting/include",
+                    "/home/nmrihserver/sm/utils",
+                    "/home/nmrihserver/sm/utils/",
+                    "/home/nmrihserver/sm/utils/chronobreak/scripting/include",
+                    "/home/nmrihserver/sm/utils/dash/scripting/include",
+                    "/home/nmrihserver/sm/utils/objective/scripting/include",
+                    "/home/nmrihserver/sm/utils/player/scripting/include",
                 ],
                 "compilerPath": "/home/nmrihserver/sm/bin/sm_latest/spcomp",
                 "outputDirectoryPath": "/home/nmrihserver/sm/bin/plugins_latest/",
@@ -236,8 +236,8 @@
                     "name": "Win32",
                     "includePath": [
                         // "${workspaceFolder}/**",
-                        // "sm_1_11/public/**",
-                        // "sm_1_11/sourcepawn/include/**",
+                        // "sm_1_12/public/**",
+                        // "sm_1_12/sourcepawn/include/**",
                         "sm_latest/public/**",
                         "sm_latest/sourcepawn/include/**",
                         "ext/log4sp/extern/**",
