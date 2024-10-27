@@ -27,3 +27,6 @@
 [submodule "inc/nmrih-vscript-proxy"]
 	path = inc/nmrih-vscript-proxy
 	url = https://github.com/dysphie/nmrih-vscript-proxy.git
+[submodule "inc/outputactions"]
+	path = inc/outputactions
+	url = https://github.com/Ilusion9/outputactions-inc-sm.git
