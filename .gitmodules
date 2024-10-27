@@ -12,3 +12,6 @@
 [submodule "ext/ripext"]
 	path = ext/ripext
 	url = https://github.com/ErikMinekus/sm-ripext.git
+[submodule "ext/socket"]
+	path = ext/socket
+	url = https://github.com/JoinedSenses/sm-ext-socket.git
