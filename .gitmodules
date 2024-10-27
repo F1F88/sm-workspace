@@ -39,3 +39,6 @@
 [submodule "utils/chronobreak"]
 	path = utils/chronobreak
 	url = https://github.com/F1F88/sm-chronobreak
+[submodule "utils/dash"]
+	path = utils/dash
+	url = https://github.com/F1F88/sm-dash
