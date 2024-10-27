@@ -45,3 +45,6 @@
 [submodule "utils/nmr-objective"]
 	path = utils/nmr-objective
 	url = https://github.com/F1F88/sm-nmrih-objective.git
+[submodule "utils/nmr-player"]
+	path = utils/nmr-player
+	url = https://github.com/F1F88/sm-nmrih-player.git
