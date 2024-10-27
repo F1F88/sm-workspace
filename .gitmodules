@@ -42,3 +42,6 @@
 [submodule "utils/dash"]
 	path = utils/dash
 	url = https://github.com/F1F88/sm-dash
+[submodule "utils/nmr-objective"]
+	path = utils/nmr-objective
+	url = https://github.com/F1F88/sm-nmrih-objective.git
