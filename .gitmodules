@@ -9,3 +9,6 @@
 [submodule "ext/log4sp"]
 	path = ext/log4sp
 	url = https://github.com/F1F88/sm-ext-log4sp.git
+[submodule "ext/ripext"]
+	path = ext/ripext
+	url = https://github.com/ErikMinekus/sm-ripext.git
