@@ -6,3 +6,6 @@
 	path = sm_latest
 	url = https://github.com/alliedmodders/sourcemod.git
 	branch = master
+[submodule "ext/log4sp"]
+	path = ext/log4sp
+	url = https://github.com/F1F88/sm-ext-log4sp.git
