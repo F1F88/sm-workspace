@@ -21,3 +21,6 @@
 [submodule "inc/localizer"]
 	path = inc/localizer
 	url = https://github.com/dragokas/SM-Localizer.git
+[submodule "inc/multicolors"]
+	path = inc/multicolors
+	url = https://github.com/Bara/Multi-Colors.git
