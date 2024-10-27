@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                // "${workspaceFolder}/**",
+                // "sm_1_12/public/**",
+                // "sm_1_12/sourcepawn/include/**",
+                "sm_latest/public/**",
+                "sm_latest/sourcepawn/include/**",
+                "ext/log4sp/extern/**",
+                "ext/log4sp/src/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/Program Files/mingw64/bin/g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,28 @@
+{
+    "SourcePawnLanguageServer.includeDirectories": [
+        ".\\scripting\\include",
+        ".\\scripting\\include\\",
+        "D:\\Code\\sm\\ext\\log4sp\\sourcemod\\scripting\\include",
+        "D:\\Code\\sm\\ext\\ripext\\pawn\\scripting\\include",
+        "D:\\Code\\sm\\ext\\socket\\scripting\\include",
+        "D:\\Code\\sm\\ext\\SteamWorks\\Pawn\\includes",
+        "D:\\Code\\sm\\inc",
+        "D:\\Code\\sm\\inc\\",
+        "D:\\Code\\sm\\inc\\localizer",
+        "D:\\Code\\sm\\inc\\multicolors\\addons\\sourcemod\\scripting\\include",
+        "D:\\Code\\sm\\inc\\nmrih-vscript-proxy",
+        "D:\\Code\\sm\\inc\\outputactions",
+        "D:\\Code\\sm\\inc\\queue\\scripting\\include",
+        "D:\\Code\\sm\\inc\\smlib2\\include",
+        "D:\\Code\\sm\\sm_latest\\plugins\\include",
+        "D:\\Code\\sm\\utils",
+        "D:\\Code\\sm\\utils\\",
+        "D:\\Code\\sm\\utils\\chronobreak\\scripting\\include",
+        "D:\\Code\\sm\\utils\\dash\\scripting\\include",
+        "D:\\Code\\sm\\utils\\objective\\scripting\\include",
+        "D:\\Code\\sm\\utils\\player\\scripting\\include"
+    ],
+    "SourcePawnLanguageServer.compiler.path": "D:\\Code\\sm\\bin\\sm_latest\\spcomp.exe",
+    "SourcePawnLanguageServer.compiler.arguments": [],
+    "sourcepawn.outputDirectoryPath": "D:\\Code\\sm\\bin\\plugins_latest\\"
+}

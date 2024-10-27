@@ -1,0 +1,15 @@
+# Binaries
+*.dll
+*.exe
+*.so
+*.smx
+
+.vscode/*
+
+bin/package*
+bin/plugins*
+
+plugins/*
+
+# Test
+# *test*.sp
