@@ -36,3 +36,6 @@
 [submodule "inc/smlib2"]
 	path = inc/smlib2
 	url = https://github.com/laper32/smlib2.git
+[submodule "utils/chronobreak"]
+	path = utils/chronobreak
+	url = https://github.com/F1F88/sm-chronobreak
