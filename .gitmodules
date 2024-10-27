@@ -24,3 +24,6 @@
 [submodule "inc/multicolors"]
 	path = inc/multicolors
 	url = https://github.com/Bara/Multi-Colors.git
+[submodule "inc/nmrih-vscript-proxy"]
+	path = inc/nmrih-vscript-proxy
+	url = https://github.com/dysphie/nmrih-vscript-proxy.git
