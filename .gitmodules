@@ -1,0 +1,4 @@
+[submodule "sm_1_12"]
+	path = sm_1_12
+	url = https://github.com/alliedmodders/sourcemod.git
+	branch = 1.12-dev
