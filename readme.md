@@ -51,6 +51,7 @@
     以子模块的方式存放工具插件
 
     这些插件主要用于提供 native 接口给其他插件调用，本身不含复杂的业务逻辑
+
     与 ext 不同，主要使用 sourcepawn 语言实现
 
     与 inc 不同，除了头文件还必须添加相关插件，提供的 native 才能正常工作
@@ -61,44 +62,19 @@
 ## 使用
 
 - 拉取项目（递归）
+
     ```
     git clone --recurse-submodules [url]
     ```
 
-- 添加子模块
-
-    ```shell
-    git submodule add [url] [path]
+    如果已经克隆了项目，且克隆时忘记添加参数 --recurse-submodules，可以使用如下命令初始化子项目
     ```
-
-    ```
-    git submodule add -b branch url [path]
-    ```
-
-- 删除子模块
-
-    git 没有提供直接删除子模块的指令，所以需要手动操作
-    ```
-    #删除子模块
-    git rm --cached 子模块路径
-    git rm -rf 子模块路径
-    rm -rf 子模块路径
-
-    从 .gitmodules 删除相关行
-    [submodule "path_to_submodule"]
-            path = path_to_submodule
-            url = https://github.com/path_to_submodule
-
-    从 .git/config 删除相关部分
-    [submodule "path_to_submodule"]
-        url = https://github.com/path_to_submodule
-
-    rm -rf .git/modules/子模块路径
+    git submodule update --init --recursive
     ```
 
 - 配置环境（样例）
 
-    vscode 编辑器 + SourcePawn Studio (By Sarrus) 拓展
+    VsCode 编辑器 + SourcePawn Studio (By Sarrus) 拓展
 
     - settings.json
 
@@ -132,8 +108,8 @@
                     "D:\\Code\\sm\\utils\\",
                     "D:\\Code\\sm\\utils\\chronobreak\\scripting\\include",
                     "D:\\Code\\sm\\utils\\dash\\scripting\\include",
-                    "D:\\Code\\sm\\utils\\objective\\scripting\\include",
-                    "D:\\Code\\sm\\utils\\player\\scripting\\include",
+                    "D:\\Code\\sm\\utils\\nmr-objective\\scripting\\include",
+                    "D:\\Code\\sm\\utils\\nmr-player\\scripting\\include",
                 ],
                 "compilerPath": "D:\\Code\\sm\\bin\\sm_1_12\\spcomp.exe",
                 "outputDirectoryPath": "D:\\Code\\sm\\bin\\plugins_1_11\\",
@@ -160,8 +136,8 @@
                     "D:\\Code\\sm\\utils\\",
                     "D:\\Code\\sm\\utils\\chronobreak\\scripting\\include",
                     "D:\\Code\\sm\\utils\\dash\\scripting\\include",
-                    "D:\\Code\\sm\\utils\\objective\\scripting\\include",
-                    "D:\\Code\\sm\\utils\\player\\scripting\\include",
+                    "D:\\Code\\sm\\utils\\nmr-objective\\scripting\\include",
+                    "D:\\Code\\sm\\utils\\nmr-player\\scripting\\include",
                 ],
                 "compilerPath": "D:\\Code\\sm\\bin\\sm_latest\\spcomp.exe",
                 "outputDirectoryPath": "D:\\Code\\sm\\bin\\plugins_latest\\",
@@ -189,8 +165,8 @@
                     "/home/nmrihserver/sm/utils/",
                     "/home/nmrihserver/sm/utils/chronobreak/scripting/include",
                     "/home/nmrihserver/sm/utils/dash/scripting/include",
-                    "/home/nmrihserver/sm/utils/objective/scripting/include",
-                    "/home/nmrihserver/sm/utils/player/scripting/include",
+                    "/home/nmrihserver/sm/utils/nmr-objective/scripting/include",
+                    "/home/nmrihserver/sm/utils/nmr-player/scripting/include",
                 ],
                 "compilerPath": "/home/nmrihserver/sm/bin/sm_1_12/spcomp",
                 "outputDirectoryPath": "/home/nmrihserver/sm/bin/plugins_1_11/",
@@ -217,8 +193,8 @@
                     "/home/nmrihserver/sm/utils/",
                     "/home/nmrihserver/sm/utils/chronobreak/scripting/include",
                     "/home/nmrihserver/sm/utils/dash/scripting/include",
-                    "/home/nmrihserver/sm/utils/objective/scripting/include",
-                    "/home/nmrihserver/sm/utils/player/scripting/include",
+                    "/home/nmrihserver/sm/utils/nmr-objective/scripting/include",
+                    "/home/nmrihserver/sm/utils/nmr-player/scripting/include",
                 ],
                 "compilerPath": "/home/nmrihserver/sm/bin/sm_latest/spcomp",
                 "outputDirectoryPath": "/home/nmrihserver/sm/bin/plugins_latest/",
@@ -257,3 +233,36 @@
             "version": 4
         }
         ```
+
+- 添加插件
+
+    在 plugins 下建立一个单独的文件夹，编写你的插件，建议使用 git，在另一个独立的仓库中管理版本
+
+- 添加子模块
+
+    ```shell
+    git submodule add [url] [path]
+    # or
+    git submodule add -b branch url [path]
+    ```
+
+- 删除子模块
+
+    git 没有提供直接删除子模块的指令，所以需要手动操作
+    ```
+    #删除子模块
+    git rm --cached 子模块路径
+    git rm -rf 子模块路径
+    rm -rf 子模块路径
+
+    从 .gitmodules 删除相关行
+    [submodule "path_to_submodule"]
+            path = path_to_submodule
+            url = https://github.com/path_to_submodule
+
+    从 .git/config 删除相关部分
+    [submodule "path_to_submodule"]
+        url = https://github.com/path_to_submodule
+
+    rm -rf .git/modules/子模块路径
+    ```

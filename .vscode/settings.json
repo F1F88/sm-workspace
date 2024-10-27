@@ -1,7 +1,6 @@
 {
     "SourcePawnLanguageServer.includeDirectories": [
         ".\\scripting\\include",
-        ".\\scripting\\include\\",
         "D:\\Code\\sm\\ext\\log4sp\\sourcemod\\scripting\\include",
         "D:\\Code\\sm\\ext\\ripext\\pawn\\scripting\\include",
         "D:\\Code\\sm\\ext\\socket\\scripting\\include",
@@ -19,8 +18,8 @@
         "D:\\Code\\sm\\utils\\",
         "D:\\Code\\sm\\utils\\chronobreak\\scripting\\include",
         "D:\\Code\\sm\\utils\\dash\\scripting\\include",
-        "D:\\Code\\sm\\utils\\objective\\scripting\\include",
-        "D:\\Code\\sm\\utils\\player\\scripting\\include"
+        "D:\\Code\\sm\\utils\\nmr-objective\\scripting\\include",
+        "D:\\Code\\sm\\utils\\nmr-player\\scripting\\include"
     ],
     "SourcePawnLanguageServer.compiler.path": "D:\\Code\\sm\\bin\\sm_latest\\spcomp.exe",
     "SourcePawnLanguageServer.compiler.arguments": [],
