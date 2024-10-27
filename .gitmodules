@@ -2,3 +2,7 @@
 	path = sm_1_12
 	url = https://github.com/alliedmodders/sourcemod.git
 	branch = 1.12-dev
+[submodule "sm_latest"]
+	path = sm_latest
+	url = https://github.com/alliedmodders/sourcemod.git
+	branch = master
