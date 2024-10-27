@@ -33,3 +33,6 @@
 [submodule "inc/queue"]
 	path = inc/queue
 	url = https://github.com/JoinedSenses/SM-Queue.git
+[submodule "inc/smlib2"]
+	path = inc/smlib2
+	url = https://github.com/laper32/smlib2.git
