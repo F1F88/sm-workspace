@@ -18,6 +18,9 @@
 [submodule "ext/SteamWorks"]
 	path = ext/SteamWorks
 	url = https://github.com/KyleSanderson/SteamWorks.git
+[submodule "inc/json"]
+	path = inc/json
+	url = https://github.com/clugg/sm-json.git
 [submodule "inc/localizer"]
 	path = inc/localizer
 	url = https://github.com/dragokas/SM-Localizer.git
