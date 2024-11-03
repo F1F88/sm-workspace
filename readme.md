@@ -35,7 +35,7 @@
     建议另外创建单独的项目管理，然后使用如下指令添加
 
     ```
-    git clone --recurse [url]
+    git clone --recurse <url>
     ```
 
 - sm_1_12
@@ -64,7 +64,7 @@
 - 拉取项目（递归）
 
     ```
-    git clone --recurse-submodules [url]
+    git clone --recurse-submodules <url> <path>
     ```
 
     如果已经克隆了项目，且克隆时忘记添加参数 --recurse-submodules，可以使用如下命令初始化子项目
@@ -97,6 +97,7 @@
                     "D:\\Code\\sm\\ext\\SteamWorks\\Pawn\\includes",
                     "D:\\Code\\sm\\inc",
                     "D:\\Code\\sm\\inc\\",
+                    "D:\\Code\\sm\\inc\\json",
                     "D:\\Code\\sm\\inc\\localizer",
                     "D:\\Code\\sm\\inc\\multicolors\\addons\\sourcemod\\scripting\\include",
                     "D:\\Code\\sm\\inc\\nmrih-vscript-proxy",
@@ -125,6 +126,7 @@
                     "D:\\Code\\sm\\ext\\SteamWorks\\Pawn\\includes",
                     "D:\\Code\\sm\\inc",
                     "D:\\Code\\sm\\inc\\",
+                    "D:\\Code\\sm\\inc\\json",
                     "D:\\Code\\sm\\inc\\localizer",
                     "D:\\Code\\sm\\inc\\multicolors\\addons\\sourcemod\\scripting\\include",
                     "D:\\Code\\sm\\inc\\nmrih-vscript-proxy",
@@ -154,6 +156,7 @@
                     "/home/nmrihserver/sm/ext/SteamWorks/Pawn/includes",
                     "/home/nmrihserver/sm/inc",
                     "/home/nmrihserver/sm/inc/",
+                    "/home/nmrihserver/sm/inc/json",
                     "/home/nmrihserver/sm/inc/localizer",
                     "/home/nmrihserver/sm/inc/multicolors/addons/sourcemod/scripting/include",
                     "/home/nmrihserver/sm/inc/nmrih-vscript-proxy",
@@ -182,6 +185,7 @@
                     "/home/nmrihserver/sm/ext/SteamWorks/Pawn/includes",
                     "/home/nmrihserver/sm/inc",
                     "/home/nmrihserver/sm/inc/",
+                    "/home/nmrihserver/sm/inc/json",
                     "/home/nmrihserver/sm/inc/localizer",
                     "/home/nmrihserver/sm/inc/multicolors/addons/sourcemod/scripting/include",
                     "/home/nmrihserver/sm/inc/nmrih-vscript-proxy",
@@ -238,18 +242,50 @@
 
     在 plugins 下建立一个单独的文件夹，编写你的插件，建议使用 git，在另一个独立的仓库中管理版本
 
-- 添加子模块
+- 在主项目中添加子模块
 
-    ```shell
-    git submodule add [url] [path]
-    # or
-    git submodule add -b branch url [path]
-    ```
+    - 添加子模块
+
+        ```shell
+        git submodule add <url> <path>
+
+        # 也可以指定子模块的分支
+        # 这将自动在 .gitmodules 中设置分支，便于多人合作（仅个人可以只在本地 .git/config 文件中设置）
+        git submodule add -b <branch> <url> <path>
+        ```
+
+    - 初始化子模块
+
+        ```shell
+        cd <submodule path>
+
+        git submodule init
+        git submodule update
+
+        # 或者将上面两步合为一步：初始化、抓取并检出子模块
+        git submodule update --init
+
+        # 如果子模块内还有子模块，需要进行递归，可以添加 --recursive
+        git submodule update --init --recursive
+        ```
+
+    - 提交更改（提交添加的子模块）
+
+        ```
+        cd ..
+
+        # 查看差异
+        git status
+        git diff --cached --submodule
+
+        # 提交
+        git commit -am "Add module ext/log4sp"
+        ```
 
 - 删除子模块
 
     git 没有提供直接删除子模块的指令，所以需要手动操作
-    ```
+    ```shell
     #删除子模块
     git rm --cached 子模块路径
     git rm -rf 子模块路径
@@ -266,3 +302,60 @@
 
     rm -rf .git/modules/子模块路径
     ```
+
+- 更新子模块
+
+    - 先提交子模块的修改
+
+        ```shell
+        cd <submodule path>
+        git add ...
+        git commit -m "..."
+        git push ...
+        ```
+
+    - 或者是拉取子模块远端的新代码
+
+        ```shell
+        cd <submodule path>
+        git pull origin <branch>
+        ```
+
+    - 然后在父项目里更新子模块的引用
+
+        ```shell
+        cd ..
+        git add <submodule path>
+        git commit -m "Bump submodule version"
+        git push ...
+        ```
+
+- 注意事项
+
+    - 在主项目中从子模块的远端拉取上游修改
+
+        ```shell
+        git submodule update --remote <submodulePath>
+
+        # 安全起见，建议在 git submodule update 后面添加 --init 选项
+        git submodule update --init --remote <submodulePath>
+
+        # 如果子模块有嵌套的子模块，则应添加 --recursive 选项
+        git submodule update --init --recursive --remote <submodulePath>
+        ```
+
+    - 如果不小心更新了子模块到最新版本如何回退
+
+        ```shell
+        # 查看历史记录
+        git log
+
+        # 回退到指定提交 ID
+        git checkout <commit id>
+        ```
+
+    - 查看子模块信息
+
+        ```shell
+        git submodule status
+        ```
