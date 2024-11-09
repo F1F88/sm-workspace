@@ -113,7 +113,7 @@
                     "D:\\Code\\sm\\utils\\nmr-player\\scripting\\include",
                 ],
                 "compilerPath": "D:\\Code\\sm\\bin\\sm_1_12\\spcomp.exe",
-                "outputDirectoryPath": "D:\\Code\\sm\\bin\\plugins_1_11\\",
+                "outputDirectoryPath": "D:\\Code\\sm\\bin\\plugins_1_12\\",
                 "compilerArguments": []
             },
             {
@@ -172,7 +172,7 @@
                     "/home/nmrihserver/sm/utils/nmr-player/scripting/include",
                 ],
                 "compilerPath": "/home/nmrihserver/sm/bin/sm_1_12/spcomp",
-                "outputDirectoryPath": "/home/nmrihserver/sm/bin/plugins_1_11/",
+                "outputDirectoryPath": "/home/nmrihserver/sm/bin/plugins_1_12/",
                 "compilerArguments": []
             },
             {
