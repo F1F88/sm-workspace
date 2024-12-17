@@ -12,7 +12,7 @@
 /**
  * Author   F1F88
  * url      https://github.com/F1F88
- * Version  1.0.0
+ * Version  1.0.1
  */
 
 
@@ -106,7 +106,7 @@ stock void SendMessageProgressBarShowOne(int client, float duration, float prefi
  * Author   dysphie
  * url      https://github.com/dysphie/nmrih-team-healing/blob/c68dcc687c943be9927656e07f880e66e174651f/scripting/nmrih-team-healing.sp#L838
  */
-void SendMessageProgressBarHideOne(int client)
+stock void SendMessageProgressBarHideOne(int client)
 {
     StartMessageOne("ProgressBarHide", client);
     EndMessage();
