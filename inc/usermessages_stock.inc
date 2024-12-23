@@ -12,7 +12,7 @@
 /**
  * Author   F1F88
  * url      https://github.com/F1F88
- * Version  1.0.1
+ * Version  1.0.2
  */
 
 
@@ -27,7 +27,7 @@ stock void SendMessageKeyHintText(const int[] clients, int numClients, int flags
         }
     }
 
-    static char text[256];
+    char text[256];
     VFormat(text, sizeof(text), format, 5);
     Handle message = StartMessageEx(messageId, clients, numClients, flags);
     BfWriteByte(message, 1); // one message
@@ -58,7 +58,7 @@ stock void SendMessageKeyHintTextAll(int flags = 0, const char[] format, any ...
             }
         }
 
-        static char text[256];
+        char text[256];
         VFormat(text, sizeof(text), format, 3);
         Handle message = StartMessageEx(messageId, clients, total, flags);
         BfWriteByte(message, 1); // one message
@@ -81,7 +81,7 @@ stock void SendMessageKeyHintTextOne(int client, int flags = 0, const char[] for
         }
     }
 
-    static char text[256];
+    char text[256];
     VFormat(text, sizeof(text), format, 4);
     Handle message = StartMessageEx(messageId, clients, 1, flags);
     BfWriteByte(message, 1); // one message
