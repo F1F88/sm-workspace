@@ -4,10 +4,16 @@
             "name": "Win32",
             "includePath": [
                 // "${workspaceFolder}/**",
-                // "sm_1_12/public/**",
-                // "sm_1_12/sourcepawn/include/**",
-                "sm_latest/public/**",
-                "sm_latest/sourcepawn/include/**",
+                // "sm_1_12/public",
+                // "sm_1_12/public/amtl",
+                // "sm_1_12/public/amtl/amtl",
+                // "sm_1_12/public/extensions",
+                // "sm_1_12/sourcepawn/include",
+                "sm_latest/public",
+                "sm_latest/public/amtl",
+                "sm_latest/public/amtl/amtl",
+                "sm_latest/public/extensions",
+                "sm_latest/sourcepawn/include",
                 "ext/log4sp/extern/**",
                 "ext/log4sp/src/**"
             ],
@@ -16,9 +22,9 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "C:/Program Files/mingw64/bin/g++.exe",
-            "cStandard": "c11",
-            "cppStandard": "gnu++14",
+            "compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
             "intelliSenseMode": "windows-gcc-x64"
         }
     ],
