@@ -6,10 +6,7 @@
 
 .vscode/*
 
-bin/package*
-bin/plugins*
+bin/*
 
 plugins/*
-
-# Test
-# *test*.sp
+utils/updater
